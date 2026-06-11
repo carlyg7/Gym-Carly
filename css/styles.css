@@ -1,0 +1,421 @@
+/* =========================
+   GLOBAL
+========================= */
+
+body{
+    margin:0;
+    padding:0;
+
+    background:#f7f7f7;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    color:#313550;
+
+    overflow-x:hidden;
+}
+
+/* =========================
+   INDEX
+========================= */
+
+.index-container{
+
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    padding:20px;
+}
+
+.index-content{
+
+    text-align:center;
+
+    max-width:500px;
+}
+
+.index-title{
+
+    font-size:4rem;
+    font-weight:300;
+
+    margin-bottom:20px;
+}
+
+.index-slogan{
+
+    font-size:1.2rem;
+
+    color:#666;
+
+    margin-bottom:40px;
+}
+
+.index-btn-start{
+
+    border:none;
+
+    background:#313550;
+
+    color:white;
+
+    padding:15px 40px;
+
+    border-radius:12px;
+
+    font-size:1.1rem;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.index-btn-start:hover{
+
+    background:#252840;
+}
+
+/* =========================
+   AGENDA
+========================= */
+
+.agenda-container{
+    padding:20px;
+    padding-bottom:120px;
+}
+
+.agenda-header{
+
+    display:flex;
+
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:30px;
+}
+
+.agenda-title{
+
+    font-size:2rem;
+    font-weight:300;
+
+    margin:0;
+}
+
+
+.agenda-navigation{
+
+    display:flex;
+
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:25px;
+}
+
+.agenda-nav-btn{
+
+    border:none;
+    background:none;
+
+    font-size:1.8rem;
+
+    cursor:pointer;
+}
+
+.agenda-month-title{
+
+    margin:0;
+
+    font-size:1.3rem;
+}
+
+.agenda-week-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(7,1fr);
+
+    gap:8px;
+}
+
+.agenda-day{
+
+    height:120px;
+
+    border:1px solid #313550;
+
+    border-radius:25px;
+
+    background:white;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+}
+
+.agenda-day-name{
+
+    font-size:1rem;
+}
+
+.agenda-day-number{
+
+    font-size:1.5rem;
+    font-weight:600;
+}
+
+.agenda-trainings-container{
+
+    margin-top:30px;
+}
+
+.agenda-empty-state{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    color:#888;
+}
+
+.agenda-fab{
+
+    position:fixed;
+
+    right:20px;
+    bottom:20px;
+
+    width:70px;
+    height:70px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#313550;
+
+    color:white;
+
+    font-size:2rem;
+
+    cursor:pointer;
+}
+.agenda-day-training{
+
+    background:#f7b21a;
+
+    color:white;
+
+    border:none;
+}
+
+.agenda-workout-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:20px;
+
+    margin-bottom:15px;
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    border:2px solid #f7b21a;
+}
+
+.agenda-status-circle{
+
+    width:50px;
+    height:50px;
+
+    border-radius:50%;
+
+    background:#f7b21a;
+
+    color:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.agenda-day-training{
+
+    background:#f7b21a;
+
+    color:white;
+
+    border:none;
+}
+
+.agenda-day-selected{
+
+    background:#313550;
+
+    color:white;
+
+    border:none;
+}
+
+.workout-container{
+
+    padding:30px;
+}
+
+.workout-title{
+
+    font-size:2rem;
+    font-weight:600;
+}
+
+/* =========================
+   WORKOUT
+========================= */
+
+.workout-page{
+
+    padding:25px;
+}
+
+.workout-back-btn{
+
+    border:none;
+
+    background:none;
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+}
+
+.workout-title{
+
+    margin-bottom:30px;
+
+    font-size:2.2rem;
+
+    font-weight:300;
+}
+
+.exercise-card{
+
+    background:white;
+
+    padding:20px;
+
+    margin-bottom:10px;
+
+    border-radius:15px;
+
+    border:1px solid #ddd;
+}
+
+.workout-finish-btn{
+
+    width:100%;
+
+    margin-top:30px;
+
+    border:none;
+
+    border-radius:20px;
+
+    padding:18px;
+
+    background:#313550;
+
+    color:white;
+
+    font-size:1.1rem;
+}
+
+.exercise-group-title{
+
+    margin-top:30px;
+    margin-bottom:15px;
+
+    font-size:1.8rem;
+
+    font-weight:500;
+
+    color:#313550;
+}
+
+.agenda-day-completed{
+
+    background:#18b86c;
+
+    color:white;
+
+    border:none;
+}
+
+.agenda-workout-card-completed{
+
+    border-color:#18b86c;
+}
+
+.agenda-workout-card-completed h4{
+
+    color:#000000;
+}
+
+.agenda-workout-card-completed p{
+
+    color:#18b86c;
+}
+
+/* =========================
+   EXERCISE
+========================= */
+
+.exercise-page{
+
+    padding:25px;
+}
+
+iframe{
+
+    border-radius:15px;
+}
+
+.exercise-name{
+
+    font-size:1.1rem;
+    font-weight:600;
+}
+
+.exercise-details{
+
+    margin-top:6px;
+
+    color:#777;
+
+    font-size:.9rem;
+}
+
+.exercise-info{
+
+    margin-top:-15px;
+    margin-bottom:20px;
+
+    color:#666;
+
+    font-size:1rem;
+}
+

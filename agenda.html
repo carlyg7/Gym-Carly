@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agenda - GymCarly</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <div class="agenda-container">
+
+        <!-- CABECERA -->
+
+        <div class="agenda-header justify-content-center center">
+
+            <h1 class="agenda-title">
+                Planificación
+            </h1>
+        </div>
+
+        <!-- NAVEGACIÓN -->
+
+        <div class="agenda-navigation">
+
+            <button id="agendaPrevWeek" class="agenda-nav-btn">
+                ❮
+            </button>
+
+            <h3
+                id="agendaPeriodTitle"
+                class="agenda-month-title">
+            </h3>
+
+            <button id="agendaNextWeek" class="agenda-nav-btn">
+                ❯
+            </button>
+
+        </div>
+
+        <!-- SEMANA -->
+
+        <div
+            id="agendaWeekContainer"
+            class="agenda-week-container">
+        </div>
+
+        <!-- ENTRENAMIENTOS -->
+
+        <div
+            id="agendaTrainingsContainer"
+            class="agenda-trainings-container">
+
+            <div class="agenda-empty-state">
+
+                No hay entrenamientos programados
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FAB -->
+
+    <button
+        id="agendaAddTraining"
+        class="agenda-fab">
+
+        +
+
+    </button>
+
+    <!-- MODAL -->
+
+    <div
+        class="modal fade"
+        id="trainingModal"
+        tabindex="-1">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title">
+                        Entrenamiento
+                    </h5>
+
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal">
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Entrenamiento
+                        </label>
+
+                        <select
+                            id="trainingType"
+                            class="form-select">
+
+                            <option value="chest">
+                                Día de Pecho, Hombros y Tríceps
+                            </option>
+
+                            <option value="legs">
+                                Día de Fuerza Tren Inferior y Core
+                            </option>
+
+                            <option value="back">
+                                Día de Espalda, Bíceps y Cardio
+                            </option>
+
+                            <option value="fullbody">
+                                Día de Fuerza y Resistencia Total
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div>
+
+                        <label class="form-label">
+                            Fecha
+                        </label>
+
+                        <input
+                            id="trainingDate"
+                            type="date"
+                            class="form-control">
+
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button
+                        id="deleteTrainingBtn"
+                        type="button"
+                        class="btn btn-outline-danger">
+
+                        Eliminar
+
+                    </button>
+
+                    <button
+                        id="saveTrainingBtn"
+                        type="button"
+                        class="btn btn-primary">
+
+                        Guardar
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- BOOTSTRAP -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- APP -->
+
+    <script src="js/agenda.js"></script>
+
+</body>
+
+</html>
