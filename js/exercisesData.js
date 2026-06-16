@@ -53,7 +53,7 @@ const workouts = {
                     {
                         id: "apertura",
                         name: "Apertura en banco plano con mancuernas",
-                        video: "https://www.youtube.com/watch?v=enI7fAJj5Fc",
+                        video: "https://www.youtube.com/watch?v=2rzOdnjuYqI",
                         sets: 3,
                         reps: 15
                     }
@@ -97,7 +97,7 @@ const workouts = {
                     {
                         id: "cinta",
                         name: "Caminar en cinta",
-                        video: "https://www.youtube.com/shorts/hzNfzTlyKG8",
+                        video: "https://www.youtube.com/shorts/B66JGfa6ZjY",
                         sets: 1,
                         reps: "15 mins"
                     }
