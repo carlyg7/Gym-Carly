@@ -227,15 +227,17 @@ const trainingModal =
         )
     );
 
-addTrainingButton.addEventListener(
-    "click",
-    () => {
-
-        trainingDateInput.value = "";
-        trainingModal.show();
-
-    }
-);
+    addTrainingButton.addEventListener(
+        "click",
+        () => {
+    
+            trainingDateInput.value =
+                selectedDate;
+    
+            trainingModal.show();
+    
+        }
+    );
 
 saveTrainingButton.addEventListener(
     "click",
