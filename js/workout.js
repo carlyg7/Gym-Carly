@@ -66,6 +66,60 @@ finishWorkoutBtn.addEventListener(
     "click",
     finishWorkout
 );
+const timerBtn =
+    document.getElementById(
+        "timerBtn"
+    );
+
+let timer = null;
+let seconds = 0;
+let running = false;
+
+function formatTime(totalSeconds) {
+
+    const mins =
+        Math.floor(totalSeconds / 60)
+            .toString()
+            .padStart(2, "0");
+
+    const secs =
+        (totalSeconds % 60)
+            .toString()
+            .padStart(2, "0");
+
+    return `${mins}:${secs}`;
+}
+
+timerBtn.addEventListener(
+    "click",
+    () => {
+
+        if (!running) {
+
+            running = true;
+
+            timer = setInterval(() => {
+
+                seconds++;
+
+                timerBtn.textContent =
+                    formatTime(seconds);
+
+            }, 1000);
+
+            return;
+        }
+
+        clearInterval(timer);
+
+        timer = null;
+        seconds = 0;
+        running = false;
+
+        timerBtn.textContent =
+            "Iniciar cronómetro";
+    }
+);
 
 function finishWorkout() {
 
