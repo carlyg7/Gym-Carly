@@ -4,7 +4,40 @@ const params =
     );
 
 const workoutId =
-    params.get("workout");
+params.get("workout");
+
+const backBtn2 =
+    document.getElementById(
+        "backBtn2"
+    );
+
+backBtn2.addEventListener(
+    "click",
+    () => {
+
+        console.log("click back");
+
+        window.location.href =
+            "agenda.html";
+
+    }
+);
+
+
+const settingsBtn =
+document.getElementById(
+    "settingsBtn"
+);
+
+settingsBtn.addEventListener(
+    "click",
+    () => {
+
+        window.location.href =
+            `workout-settings.html?workout=${workoutId}`;
+
+    }
+);
 
 const trainingDate =
     params.get("date");

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Editar rutina</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link
+        rel="stylesheet"
+        href="css/styles.css">
+
+</head>
+
+<div
+    class="modal fade"
+    id="exerciseModal"
+    tabindex="-1">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5
+                    id="exerciseModalTitle"
+                    class="modal-title">
+
+                    Editar ejercicio
+
+                </h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <div class="mb-3">
+
+                    <label class="form-label">
+                        Grupo
+                    </label>
+                
+                    <select
+                        id="exerciseGroupSelect"
+                        class="form-select">
+                    </select>
+
+                    <label class="form-label">
+                        Nombre
+                    </label>
+
+                    <input
+                        id="exerciseNameInput"
+                        class="form-control">
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label class="form-label">
+                        Vídeo
+                    </label>
+
+                    <input
+                        id="exerciseVideoInput"
+                        class="form-control">
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label class="form-label">
+                        Series
+                    </label>
+
+                    <input
+                        id="exerciseSetsInput"
+                        class="form-control">
+
+                </div>
+
+                <div>
+
+                    <label class="form-label">
+                        Repeticiones
+                    </label>
+
+                    <input
+                        id="exerciseRepsInput"
+                        class="form-control">
+
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button
+                    id="saveExerciseBtn"
+                    class="btn btn-primary">
+
+                    Guardar
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div
+    class="modal fade"
+    id="deleteModal"
+    tabindex="-1">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    Eliminar ejercicio
+                </h5>
+
+            </div>
+
+            <div class="modal-body">
+
+                <p id="deleteModalText">
+                </p>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal">
+
+                    No
+
+                </button>
+
+                <button
+                    id="confirmDeleteBtn"
+                    class="btn btn-danger">
+
+                    Sí
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<body>
+
+    <div class="workout-page">
+
+        <div class="workout-navbar">
+
+            <button
+            id="backBtn"
+            class="workout-nav-btn">
+    
+            <i class="bi bi-arrow-left-circle"></i>
+    
+        </button>
+
+        </div>
+
+        <h1 id="settingsTitle">
+        </h1>
+
+        <button
+    id="addExerciseBtn"
+    class="workout-finish-btn">
+
+    Añadir ejercicio
+
+</button>
+
+        <div id="settingsContainer">
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/exercisesData.js"></script>
+    <script src="js/workout-settings.js"></script>
+
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-const workouts = {
+const defaultWorkouts = {
 
     chest: {
 
@@ -55,7 +55,7 @@ const workouts = {
                         name: "Apertura en banco plano con mancuernas",
                         video: "https://www.youtube.com/watch?v=2rzOdnjuYqI",
                         sets: 3,
-                        reps: 15
+                        reps: 12
                     }
                 ]
             },
@@ -97,7 +97,7 @@ const workouts = {
                     {
                         id: "cinta",
                         name: "Caminar en cinta",
-                        video: "https://www.youtube.com/shorts/B66JGfa6ZjY",
+                        video: "https://www.youtube.com/shorts/hzNfzTlyKG8",
                         sets: 1,
                         reps: "15 mins"
                     }
@@ -424,3 +424,23 @@ const workouts = {
         ]
     }
 };
+
+let workouts =
+    JSON.parse(
+        localStorage.getItem(
+            "gymcarly_workouts"
+        )
+    );
+
+if (!workouts) {
+
+    workouts = structuredClone(
+        defaultWorkouts
+    );
+
+    localStorage.setItem(
+        "gymcarly_workouts",
+        JSON.stringify(workouts)
+    );
+
+}
